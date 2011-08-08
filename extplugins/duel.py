@@ -23,9 +23,12 @@
 #     2010/09/14 - 1.1 - Courgette
 #    * handle player disconnection
 #
+#     2011/08/08 - 1.1.1 - MordyT
+#    * hard coded !d as a aliases to !duel based on suggestion on forums
+#
 
-__author__  = 'Courgette'
-__version__ = '1.1'
+__author__  = 'Courgette, MordyT'
+__version__ = '1.1.1'
 
 
 import b3
@@ -47,6 +50,7 @@ class DuelPlugin(b3.plugin.Plugin):
         self.registerEvent(b3.events.EVT_GAME_ROUND_END)
         
         self._adminPlugin.registerCommand(self, 'duel', 1, self.cmd_duel)
+        self._adminPlugin.registerCommand(self, 'd', 1, self.cmd_duel)
         self._adminPlugin.registerCommand(self, 'duelreset', 1, self.cmd_duelreset)
         self._adminPlugin.registerCommand(self, 'duelcancel', 1, self.cmd_duelcancel)
 
