@@ -23,6 +23,9 @@ Commands
 Changelog
 ---------
 
+08/08/2011 - 1.1.1 - MordyT
+   * hard coded !d as a aliases to !duel based on suggestion on forums
+
 28/08/2010 - 1.0 - Courgette
    * first releasebased on 1989trouble07's suggestion on the B3 forums
 
